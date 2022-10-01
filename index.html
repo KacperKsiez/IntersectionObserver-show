@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="script.js" defer></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+			rel="stylesheet"
+		/>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+	</head>
+	<body>
+        <script>
+            window.onload=()=>{
+                // document.querySelector('.preloader').style.display="none";
+                const preloader = document.querySelector('.preloader')
+                const headerTitle = document.querySelector('.main-content__fullsite-title')
+                preloader.classList.add('preolader--done')
+                setTimeout(() => {
+                    preloader.remove()
+                }, 1000);
+                setTimeout(() => {
+                    headerTitle.classList.add('main-content__fullsite-title--lights')
+                }, 500);
+
+            }
+        </script>
+        <div class="preloader"></div>
+        <header class="main-nav">
+				
+            <h1 class="main-nav__logo"><a class="main-nav__logo-link" href="#">IntObs</a></h1>
+            <nav>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">HOME</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">ABOUT</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">ANOTHER PAGE</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">PRICING</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">BLOG</a></li>
+                </ul>
+                
+            </nav>
+            <nav class="main-nav-btns">
+                <button class="main-nav__btn btn">LOGIN</button>
+                <button class="main-nav__btn main-nav__btn--join btn">JOIN</button>
+            </nav>
+            
+        </header>
+        <main class="main-content">
+            <div class="main-content__fullsite">
+				<h1 class="main-content__fullsite-title">Intersection Observer is pretty userful</h1>
+			</div>
+
+            <section class="about">
+                <article class="about__acticle about__acticle--big">
+                    <h1 class="about__header">Lorem, ipsum.</h1>
+                    <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="about__acticle">
+                    <h1 class="about__header">Lorem, ipsum.</h1>
+                    <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis porro voluptatum libero! Minus, eaque enim!</p>
+                </article>
+                <article class="about__acticle">
+                    <h1 class="about__header">Lorem, ipsum.</h1>
+                    <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis porro voluptatum libero! Minus, eaque enim!</p>
+                </article>
+                <article class="about__acticle">
+                    <h1 class="about__header">Lorem, ipsum.</h1>
+                    <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis porro voluptatum libero! Minus, eaque enim!</p>
+                </article>
+            </section>
+
+            <section class="articles">
+                <acticle class="primary__article">
+                    <img class="primary__article--img" src="https://picsum.photos/430/470" alt="photo from loremPicsum">
+                    <p class="primary__article--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi cupiditate debitis facilis quibusdam magni. Eveniet.</p>
+                </acticle>
+                <acticle class="primary__article-reverse">
+                    <img class="primary__article--img" src="https://picsum.photos/430/470" alt="photo from loremPicsum">
+                    <p class="primary__article--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi cupiditate debitis facilis quibusdam magni. Eveniet.</p>
+                </acticle>
+                <acticle class="primary__article">
+                    <img class="primary__article--img" src="https://picsum.photos/430/470" alt="photo from loremPicsum">
+                    <p class="primary__article--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi cupiditate debitis facilis quibusdam magni. Eveniet.</p>
+                </acticle>
+            </section>
+            
+        </main>
+	</body>
+</html>
